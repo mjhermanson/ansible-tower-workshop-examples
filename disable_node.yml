@@ -18,6 +18,6 @@
     - name: DISABLE NODES
       bigip_node:
         provider: "{{provider}}"
-        name: "{{hostvars[item].inventory_hostname}}"
+        name: "{{survey_node}}"
         state: "disabled"
-      loop: "{{ groups['web'] }}"
+
