@@ -11,7 +11,7 @@
     - name: COLLECT BIG-IP FACTS
       bigip_device_info:
         gather_subset:
-          - system-info
+          - all
         provider:
           server: "{{private_ip}}"
           user: "{{ansible_user}}"
